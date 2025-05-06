@@ -1,0 +1,38 @@
+[
+    {
+        "title": "HTML 5",
+        "DESCRIPTION": "Proficient in HTML, crafting clean, semantic code to build accessible and responsive web pages. Skilled in structuring content effectively, ensuring a solid foundation for web development projects.",
+        "img": "./images/html-5-svgrepo-com.svg"
+    },
+    {
+        "title": "CSS3",
+        "DESCRIPTION": "Expert in CSS3 styling like grid layouts, flexbox, and preprocessors. Create visually appealing and responsive layouts. Master of cross-browser compatibility and performance optimization.",
+        "img": "./images/css.svg"
+    },
+    {
+        "title": "JAVASCRIPT",
+        "DESCRIPTION": "JavaScript wizard crafting dynamic and interactive web experiences. Expert in DOM manipulation, asynchronous programming, and building complex applications. Passionate about creating intuitive user interfaces.",
+        "img": "./images/js.svg"
+    },
+    {
+        "title": "REACT",
+        "DESCRIPTION": "React expert building high-performance user interfaces. Proficient in component-based architecture, state management, and hooks. Delivering scalable and maintainable web applications.",
+        "img": "./images/react-svgrepo-com.svg"
+    },
+    {
+        "title": "DATABASE",
+        "DESCRIPTION": "Designing efficient and scalable database solutions. Proficient in SQL, data modeling, and performance optimization. Managing complex data with expertise.",
+        "img": "./images/sql-svgrepo-com.svg"
+    },
+    {
+        "title": "C++",
+        "DESCRIPTION": "C++ programming expert with a strong foundation in core programming concepts, object-oriented design, and data structures. Proficient in crafting efficient and scalable solutions.",
+        "img": "./images/c.svg"
+    },
+    {
+        "title": "PYTHON",
+        "DESCRIPTION": "Python proficient. Building robust applications with clean, efficient code. Passionate about solving problems with Python's versatility. Delivering efficient and scalable solutions",
+        "img": "./images/python.svg"
+    }
+
+]
