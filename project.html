@@ -4,109 +4,272 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Sultan Haider</title>
+  <link rel="stylesheet" href="/css/bootstrap.css">
   <link rel="stylesheet" href="/css/style.css">
-  <title>Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <header>
-    <div class="navbar">
-      <div class="logo">&lt;<span style="color: whitesmoke;">Code</span>Zen/></div>
-      <ul>
-        <li class="li"><a href="index.html">Home</a></li>
-        <li class="li"><a href="About.html">About</a></li>
-        <li class="li box"><a href="project.html">Projects</a></li>
-        <li class="li"><a href="Services.html">Services</a></li>
-        <li class="li"><a href="./contact.html">Contact</a></li>
-      </ul>
-      <div class="menubar">
-        &#9776;
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-text">Sultan<span class="accent">.dev</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <div class="vertnav">
-    <ul>
-      <li class=""><a href="index.html">Home</a></li>
-      <li class=""><a href="About.html">About</a></li>
-      <li class="box"><a href="project.html">Projects</a></li>
-      <li class=""><a href="Services.html">Services</a></li>
-      <li class=""><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
+  <section class="projects-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">My Projects</h2>
+      
+      <div class="project-filters mb-5" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="data">Data Science</button>
+        <button class="filter-btn" data-filter="ai">AI & Python</button>
+        <button class="filter-btn" data-filter="cpp">C++ Projects</button>
+      </div>
 
-  <div>
-    <h1 class="serv">
-      My Projects
-    </h1>
+      <div class="row g-4">
+        <!-- Web Development Projects -->
+        <div class="col-lg-6" data-aos="fade-up" data-category="web">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/portfolio.jpg" alt="Portfolio Website">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/Sultan602414/Portfolio" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                  <a href="https://sultan602414.github.io/Portfolio/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>A modern, responsive portfolio website built with Bootstrap and JavaScript, featuring smooth animations and a clean design.</p>
+              <div class="project-tags">
+                <span>Bootstrap</span>
+                <span>JavaScript</span>
+                <span>HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  </div>
+        <!-- Data Science Projects -->
+        <div class="col-lg-6" data-aos="fade-up" data-category="data">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/stock-analysis.jpg" alt="Stock Price Prediction">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/Sultan602414/Stock-Price-Prediction" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Stock Price Prediction</h3>
+              <p>Linear Regression model for Apple Inc. stock price prediction using historical data (2000-2023) with feature engineering and RMSE evaluation.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Data Analysis</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <div class="cont">
-    <div data-aos="fade-right" class="Workcard">
-      <img class="image-responsive" src="./images/database.png" alt="">
-      <div class="card__content">
-        <p class="card__title mt-3">Science and Technology Database</p>
-        <p class="card__description">- Built a comprehensive database project using SQL, Python Flask for backend, and HTML, CSS, JS for frontend, allowing users to search and manage information on various science and technology topics..</p>
-        <a role="button" href="https://github.com/Sultan602414/PakistanTechnologyDatabase" target="_blank" class="btn gitbtn">Github</a>
+        <!-- AI & Python Projects -->
+        <div class="col-lg-6" data-aos="fade-up" data-category="ai">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/tic-tac-toe.jpg" alt="AI Tic Tac Toe">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/Sultan602414/AI-Tic-Tac-Toe" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>AI Tic Tac Toe</h3>
+              <p>AI-driven Tic Tac Toe game implemented in Python, C++, and Assembly, showcasing cross-language logic and AI decision making.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>C++</span>
+                <span>Assembly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C++ Projects -->
+        <div class="col-lg-6" data-aos="fade-up" data-category="cpp">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/LMS.png" alt="Learning Management System">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/Sultan602414/Learning-Management-System" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Learning Management System</h3>
+              <p>A comprehensive LMS built using C++ with OOP principles, managing courses, students, and performance tracking.</p>
+              <div class="project-tags">
+                <span>C++</span>
+                <span>OOP</span>
+                <span>DSA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Projects -->
+        <div class="col-lg-6" data-aos="fade-up" data-category="web">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/ecommerce.jpg" alt="E-Commerce Website">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/Sultan602414/E-Commerce-Website" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Website</h3>
+              <p>A full-stack e-commerce platform with user authentication, product management, and payment integration.</p>
+              <div class="project-tags">
+                <span>MERN Stack</span>
+                <span>Redux</span>
+                <span>Stripe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-category="data">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/data anlysis.png" alt="Data Visualization Dashboard">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/Sultan602414/Data-Visualization-Dashboard" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Data Visualization Dashboard</h3>
+              <p>Interactive dashboard for visualizing and analyzing large datasets using Python and modern visualization libraries.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Matplotlib</span>
+                <span>Seaborn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-category="ai">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/chatbot.jpg" alt="AI Chatbot">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/Sultan602414/AI-Chatbot" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>AI Chatbot</h3>
+              <p>An intelligent chatbot using natural language processing and machine learning for automated customer support.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>NLP</span>
+                <span>TensorFlow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-category="cpp">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/compiler.jpg" alt="Compiler Design">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/Sultan602414/Compiler-Design" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Compiler Design</h3>
+              <p>A compiler implementation for a custom programming language, featuring lexical analysis, parsing, and code generation.</p>
+              <div class="project-tags">
+                <span>C++</span>
+                <span>Compiler</span>
+                <span>DSA</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div data-aos="fade-right" class="Workcard">
-      <img class="image-responsive" src="./images/LMS.png" alt="">
-      <div class="card__content">
-        <p class="card__title mt-3">Learning Management System</p>
-        <p class="card__description">- Designed and implemented an LMS using Object-Oriented Programming (OOP) and Data Structures and Algorithms (DSA) concepts, providing features like course management, student enrollment, and progress tracking.</p>
-        <a role="button" href="https://github.com/Sultan602414/LMS" target="_blank" class="btn gitbtn">Github</a>
-      </div>
-    </div>
-    <div data-aos="fade-right" class="Workcard">
-      <img class="image-responsive" src="./images/snake.png" alt="">
-      <div class="card__content">
-        <p class="card__title mt-3">Snake and Ladder Game</p>
-        <p class="card__description">-Developed a classic Snake and Ladder game using C++, incorporating logic for player movement and game progression with an interactive command-line interface..</p>
-        <a role="button" href="https://github.com/Sultan602414/snakeLadderGame" target="_blank" class="btn gitbtn">Github</a>
-      </div>
-    </div>
-    <div data-aos="fade-right" class="Workcard">
-      <img class="image-responsive" src="./images/data anlysis.png" alt="">
-      <div class="card__content">
-        <p class="card__title mt-3">Data Analysis Project: </p>
-        <p class="card__description">- Performed data analysis and visualization using Python and Matplotlib, focusing on deriving insights from datasets through statistical analysis and graphical representation.</p>
-        <a role="button" href="https://github.com/Sultan602414/python-Data-Analysis" target="_blank" class="btn gitbtn">Github</a>
-      </div>
-    </div>
-    <div data-aos="fade-right" class="Workcard">
-      <img class="image-responsive" src="./images/assembly.png" alt="">
-      <div class="card__content">
-        <p class="card__title mt-3">Tic-Tac-Toe</p>
-        <p class="card__description">- Developed a Tic-Tac-Toe game in assembly language, demonstrating low-level programming skills and understanding of processor operations.</p>
-        <a role="button" href="https://github.com/Sultan602414/TIC-TAC-TOE-Assembly" target="_blank" class="btn gitbtn">Github</a>
+  </section>
 
-      </div>
-    </div>
-    <div data-aos="fade-right" class="Workcard">
-      <img class="image-responsive" src="./images/port.png" alt="">
-      <div class="card__content">
-        <p class="card__title mt-3">Portfolio Website</p>
-        <p class="card__description">-Designed and implemented a personal portfolio website showcasing various projects, built using modern frontend technologies including HTML, CSS, and JavaScript.</p>
-        <a role="button" href="https://github.com/mubashir-hsn/Spotify" target="_blank" class="btn gitbtn">Github</a>
+  <script src="/js/bootstrap.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
 
-      </div>
-    </div>
-    <div data-aos="fade-right" class="Workcard">
-      <img class="image-responsive" src="./images/todo.jpg" alt="">
-      <div class="card__content">
-        <p class="card__title mt-3">TODO APP</p>
-        <p class="card__description">Created a responsive and functional To-Do app using HTML, CSS, and JavaScript, enabling users to efficiently manage their daily tasks with a sleek, user-friendly interface.</p>
-        <a role="button" href="https://github.com/Sultan602414/TO-DO-APP" target="_blank" class="btn gitbtn">Github</a>
+    // Project filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
 
-      </div>
-    </div>
-  </div>
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
 
+        const filter = button.getAttribute('data-filter');
 
-  <script src="/js/app.js"></script>
+        projectCards.forEach(card => {
+          const category = card.parentElement.getAttribute('data-category');
+          if (filter === 'all' || filter === category) {
+            card.parentElement.style.display = 'block';
+          } else {
+            card.parentElement.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

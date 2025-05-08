@@ -4,98 +4,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+  <title>About Me | Sultan Haider</title>
   <link rel="stylesheet" href="/css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <header id="aboutNavbar">
-    <div class="navbar">
-      <div class="logo">&lt;<span style="color: whitesmoke;">Code</span>Zen/></div>
-      <ul>
-        <li class="li"><a href="index.html">Home</a></li>
-        <li class="li box"><a href="About.html">About</a></li>
-        <li class="li"><a href="project.html">Projects</a></li>
-        <li class="li"><a href="Services.html">Services</a></li>
-        <li class="li"><a href="contact.html">Contact</a></li>
-      </ul>
-  
-      <div class="menubar">
-        &#9776;
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-text">Sultan<span class="accent">.dev</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <div class="vertnav">
-    <ul>
-      <li class=""><a href="index.html">Home</a></li>
-      <li class=" box"><a href="About.html">About</a></li>
-      <li class=""><a href="project.html">Projects</a></li>
-      <li class=""><a href="Services.html">Services</a></li>
-      <li class=""><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-
-  <main>
+  <section class="about-section py-5">
     <div class="container">
-      <div class="row">
-        <h1 class="col serv">
-          ABOUT ME
-        </h1>
-      </div>
-    </div>
-   
-    <div class="container">
-      
-
-        <div class="container1 row" style="margin-top: 60px;">
-          <div class="aboutLeft col-lg-6 col-md-4 col-sm-10">
-            <div class="aboutimg">
-              <img src="./images/about.png" alt="SULTAN HAIDER">
-            </div>
-          </div>
-          <div class="aboutright col-lg-6 col-md-8 col-sm-10">
-            <p class="heading">Hello, I'm</p>
-            <h1>SULTAN HAIDER</h1>
-            <p>a undergraduate computer science student and <br>a professional MERN Stack Developer <br>
-            with a passion for building web applications using MongoDB, Express.js, React, and Node.js. <br>
-              Sultan enjoys solving problems and creating efficient, scalable solutions. <br>
-              With a solid understanding of software engineering principles, he focuses on writing clean, maintainable code and delivering user-friendly experiences. <br>
-              He is always eager to learn and improve in the fast-paced world of web development.
-    
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-content">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+              I am Sultan Haider, a passionate BS Computer Science student and MERN Stack Developer based in Punjab, Pakistan. 
+              With a strong foundation in Python and C++, I specialize in creating responsive and user-friendly web applications 
+              using modern frameworks.
             </p>
-            <div class="btns">
-              <a download href="./files/Sultan Resume(updated).pdf"  style="text-decoration: none" class="btn">Download CV</a>
-              <button class="btn hire">Hire Me</button>
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <h3>Education</h3>
+                  <p>BS Computer Science at Namal University, Mianwali (2022-Present)</p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <h3>Experience</h3>
+                  <p>UI/UX Intern at SFH</p>
+                  <p>General Wing Head at Namal Society for Social Impact</p>
+                  <p>Event Coordinator at Namal Literary Society</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="skills-container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h3>Programming</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">C++</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">Assembly</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">MERN Stack</span>
+                  <span class="skill-tag">Bootstrap</span>
+                  <span class="skill-tag">HTML/CSS</span>
+                  <span class="skill-tag">Responsive Design</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>Data Science</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">Data Analysis</span>
+                  <span class="skill-tag">Machine Learning</span>
+                  <span class="skill-tag">Pandas</span>
+                  <span class="skill-tag">Matplotlib</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>Other Skills</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">Compiler Design</span>
+                  <span class="skill-tag">Databases</span>
+                  <span class="skill-tag">UI/UX Design</span>
+                  <span class="skill-tag">Generative AI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="boxCont">
-      <div class="boxes">
-        <h1>0</h1>
-        <h5>clients</h5>
-      </div>
-      <div class="boxes">
-        <h1>15+</h1>
-        <h5>Projects</h5>
-      </div>
-      <div class="boxes">
-        <h1>3</h1>
-        <h5>Interships</h5>
-      </div>
-      <div class="boxes">
-        <h1>2+</h1>
-        <h5>years of experience</h5>
-      </div>
-    </div>
-  </main>
- 
   <script src="/js/bootstrap.js"></script>
-  <script src="/js/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 
 </html>

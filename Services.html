@@ -4,55 +4,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <title>Services | Sultan Haider</title>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <header id="serviceNavbar">
-    <div class="navbar">
-      <div class="logo">&lt;<span style="color: whitesmoke;">Code</span>Zen/></div>
-      <ul>
-        <li class="li"><a href="index.html">Home</a></li>
-        <li class="li"><a href="About.html">About</a></li>
-        <li class="li"><a href="project.html">Projects</a></li>
-        <li class="li box"><a href="Services.html">Services</a></li>
-        <li class="li"><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="menubar">
-        &#9776;
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-text">Sultan<span class="accent">.dev</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <div class="vertnav">
-    <ul>
-      <li class=""><a href="index.html">Home</a></li>
-      <li class=""><a href="About.html">About</a></li>
-      <li class=""><a href="project.html">Projects</a></li>
-      <li class="box"><a href="Services.html">Services</a></li>
-      <li class=""><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
+  <section class="services-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">My Services</h2>
+      
+      <div class="row g-4">
+        <!-- Web Development -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Creating responsive and user-friendly web applications using modern frameworks and best practices.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> MERN Stack Development</li>
+              <li><i class="fas fa-check"></i> Responsive Design</li>
+              <li><i class="fas fa-check"></i> UI/UX Implementation</li>
+              <li><i class="fas fa-check"></i> Performance Optimization</li>
+            </ul>
+          </div>
+        </div>
 
-  
-  <main>
-    <div>
-      <h1 class="serv">
-        MY SERVICES
-      </h1>
-      <p>Bringing your digital ideas to life with expertise in web development,<br> creating efficient, dynamic and user friendly solutions.</p>
+        <!-- Data Science -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Data Science</h3>
+            <p>Leveraging data to drive insights and build predictive models for better decision making.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Data Analysis</li>
+              <li><i class="fas fa-check"></i> Machine Learning</li>
+              <li><i class="fas fa-check"></i> Data Visualization</li>
+              <li><i class="fas fa-check"></i> Statistical Modeling</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Software Development -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Software Development</h3>
+            <p>Building robust and scalable software solutions using Python and C++.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Python Applications</li>
+              <li><i class="fas fa-check"></i> C++ Development</li>
+              <li><i class="fas fa-check"></i> Algorithm Design</li>
+              <li><i class="fas fa-check"></i> System Architecture</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Creating intuitive and engaging user interfaces that enhance user experience.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> User Interface Design</li>
+              <li><i class="fas fa-check"></i> User Experience Design</li>
+              <li><i class="fas fa-check"></i> Wireframing</li>
+              <li><i class="fas fa-check"></i> Prototyping</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Database Development -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Database Development</h3>
+            <p>Designing and implementing efficient database solutions for optimal performance.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Database Design</li>
+              <li><i class="fas fa-check"></i> Query Optimization</li>
+              <li><i class="fas fa-check"></i> Data Modeling</li>
+              <li><i class="fas fa-check"></i> Database Management</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- AI Development -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>AI Development</h3>
+            <p>Building intelligent systems and applications using artificial intelligence.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> AI Applications</li>
+              <li><i class="fas fa-check"></i> Machine Learning Models</li>
+              <li><i class="fas fa-check"></i> Neural Networks</li>
+              <li><i class="fas fa-check"></i> AI Integration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card-container">
+  </section>
 
-    </div>
-
-
-  </main>
-
-
-
-  <script src="/js/app.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 
 </html>
